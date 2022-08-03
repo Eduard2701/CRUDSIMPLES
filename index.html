@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/records.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <script src="main.js" defer></script>
+    <title>CRUD</title>
+</head>
+<body>
+    <header>
+        <h1 class="header-title">Cadastro de Produtos</h1>
+    </header>
+    <main>
+        <button type="button" class="button blue mobile" id="cadastrarProduto">Cadastrar Produto</button>
+        <table class="records">
+            <thead>
+                <tr>
+                    <th>Sequencial numérico</th>
+                    <th>Descrição do produto </th>
+                    <th>Observação do produto</th>
+                    <th>Data de criação</th>
+                     <th>Data da última alteração</th>
+                     <th>Ação</th>
+                </tr>
+            </thead>
+            
+        </table>
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <header class="modal-header">
+                    <h2>Novo Produto</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
+                </header>
+                <form id= form class="modal-form">
+                    <input id= "codigo" type="num" class="modal-field" placeholder="Sequencial numérico">
+                    <input  id= "descrição" type="text" class="modal-field" placeholder="Descrição do produto">
+                    <input  id="observação" type="logtext" class="modal-field" placeholder="Observação do produto">
+                    <input  id= "data1" type="date" class="modal-field" placeholder="Data de criação">
+                    <input  id="data2" type="date" class="modal-field" placeholder="Data da última alteração">
+                </form>
+                <footer class="modal-footer">
+                    <button class="button green">Salvar</button>
+                    <button class="button blue">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright &copy;  Ing. Eduard R Nuñez
+    </footer>
+</body>
+</html>
